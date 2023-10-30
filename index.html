@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <h1 class="quiz-title">Quiz Multiple Question</h1>
+        <div class="question-container">
+            <p class="question" id="question">Question 1: What is the capital of Pakistan?</p>
+            <ul class="choices" id="choices">
+                <li><input type="radio" name="choice" value="Lahore"> Lahore</li>
+                <li><input type="radio" name="choice" value="Karachi"> Karachi</li>
+                <li><input type="radio" name="choice" value="Islamabad"> Islamabad</li>
+            </ul>
+        </div>
+        <div class="nav-buttons">
+            <button id="prev" class="nav-button" onclick="previousQuestion()">Previous</button>
+            <button id="next" class="nav-button" onclick="nextQuestion()">Next</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
